@@ -434,8 +434,9 @@ a.fa.fa-angle-down:focus {
   margin-bottom: 30px;
 }
 
+
 #resume {
-    background: url(../img/resume-bg.png);
+    background: url(../img/resume-bg.jpg);
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
