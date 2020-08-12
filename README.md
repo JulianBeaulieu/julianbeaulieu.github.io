@@ -2,18 +2,56 @@
 ###### Guides & Resources for Building a Portfolio Website to Help Land a Software Engineering Position
 
 ### Summary
-Many software engineers have a portfolio website where they showcase themselves. This is an ideal place to point recruiters to in order to display your technical abilities and provide them with any relevant information about yourself. Generally on a portfolio website you will provide information about yourself, contact information, a resume, and a portfolio. This directory provides links to articles I wrote that describe my discoveries of best practices and optimal strategies to build and display a personal website to enhance your chances in the hiring process.
+#### Link to other page on this website which is a project
+<div class="col-md-4 col-sm-6 portfolio-item project">
+  <a href="portfolio/mlbstatvis">
+  <div class="portfolio-hover">
+    <div class="hover-text">
+      <div class="hover-text-box">
+        <h4>MLB Statistics Visualization</h4>
+        <hr>
+        <h6>Design & Dev of a D3 info-vis for MLB stats</h6>
+      </div>
+    </div>
+    <img src="img/projects/mlb-stat-vis/mlb-stat-vis.png" class="portfolio-image img-responsive" alt="">
+  </div>
+</a>
+</div>
 
-### This Repository
-This repository includes all the code for my portfolio website and I welcome you to clone it to use as a template.
-###### My Portfolio Website: http://stevejones.io
+#### Link to a pdf
+<div class="col-md-4 col-sm-6 portfolio-item writing project">
+  <div class="portfolio-hover" data-toggle="modal" href="#honors-thesis">
+    <div class="hover-text">
+      <div class="hover-text-box">
+        <h4>Undergrad Honors Thesis</h4>
+        <hr>
+        <h6>UX Research of the Floating Action Button</h6>
+      </div>
+    </div>
+    <img src="img/projects/honors-thesis/honors-thesis.png" class="portfolio-image img-responsive" alt="">
+  </div>
+</div>
 
-### Directory
-1. [What is a Personal Website](https://medium.com/@steve_jones/what-is-a-personal-website-3e18926847ba#.ad5u6juwy)
-2. [Buying a Domain Name for a Personal Website](https://medium.com/@steve_jones/buying-a-domain-name-for-a-personal-website-388c97793104#.x9w0102cj)
-3. [How to Hosting Your Personal Website with GitHub Pages](https://medium.com/@steve_jones/hosting-a-personal-website-with-github-pages-ff78ede9bdd6#.31qmfm626)
-4. [How to Point a Domain on Google Domains to GitHub Pages](https://medium.com/@steve_jones/4-how-to-point-a-domain-on-google-domains-to-github-pages-1d4c24f01382#.o5p980ren)
-5. [How to Design & Develop a Personal Website](https://medium.com/@steve_jones/how-to-design-develop-a-personal-website-4b44418d537a#.vpj6ztc23)
-6. [What to Include on a Personal Website](https://medium.com/@steve_jones/6-what-to-include-on-a-personal-website-1602351b42cf#.ss7qmv4e6)
-7. [Software Engineering Resume - Best Practices](https://medium.com/@steve_jones/7-software-engineer-resume-best-practices-7598636bdf3f#.wohxj35hz)
-8. [Resources to Help Land a Software Engineering Position](https://medium.com/@steve_jones/8-resources-to-help-land-a-software-engineering-position-9291322f8d21#.pqo9ggl24)
+
+#### Link to other page on another website
+<div class="modal fade" id="personal-website" tabindex="-1" role="dialog" aria-labelledby="personal-website" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+        <h4 class="modal-title">How To Build a Personal Website</h4>
+        <h6 class="modal-title-description">8 Article Guide to Help Build a Personal Website</h6>
+      </div>
+      <div class="modal-body">
+        <p>
+          <img class="img-responsive img-centered" src="img/writings/personal-website/personal-website.png" alt="">
+        </p>
+        <p class="modal-description"></p>
+        <p class="visit"><a href="https://github.com/Steve-Jones/Steve-Jones.github.io/blob/master/README.md" target="_blank" id="visit-btn">Read Articles</a></p>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
