@@ -270,6 +270,12 @@ a.fa.fa-angle-down:hover {
 a.fa.fa-angle-down:focus {
     text-decoration: none;
 }
+p.main {
+  text-align: justify;
+}
+p.submain {
+  text-align: center;
+}
 
 .picture {
   position: relative;
