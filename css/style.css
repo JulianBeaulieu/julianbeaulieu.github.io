@@ -482,8 +482,9 @@ a.resume-btn {
     padding: 10px 20px;
     color: #ddd;
     border: 2px solid #ccc;
+    background-color: rgba(0, 0, 0, 0.4);
     font-family: "Lato", sans-serif;
-    font-size: 16px;
+    font-size: 18px;
     font-weight: 300;
     text-decoration: none;
     letter-spacing: 1px;
@@ -496,7 +497,7 @@ a.resume-btn:hover, a.resume-btn:active {
     color: #fff;
     /*font-weight: 400;*/
     border: 2px solid #ccc;
-    background-color: rgba(254, 254, 254, 0.2);
+    background-color: rgba(0, 0, 0, 0.8);
     padding: 10px 30px;
 }
 a.portfolio-btn {
