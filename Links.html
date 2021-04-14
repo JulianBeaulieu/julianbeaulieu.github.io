@@ -123,7 +123,10 @@
     <div class="col-xs-12">
             <div class="text-center">
                 <div style="padding-bottom: 30px;">
-                    <button onclick="window.location.href='http://julianbeaulieu.com'" type="button" class="btn btn-outline-light shake" style="width: 80%; padding-top:10px; padding-bottom:10px; font-weight: 600;">My Personal Website</button>
+                    <button onclick="create_VCARD()" type="button" class="btn btn-outline-light shake" style="width: 80%; padding-top:10px; padding-bottom:10px; font-weight: 600;">My Contact</button>
+                </div>
+                <div style="padding-bottom: 30px;">
+                    <button onclick="window.location.href='http://julianbeaulieu.com'" type="button" class="btn btn-outline-light" style="width: 80%; padding-top:10px; padding-bottom:10px; font-weight: 600;">My Personal Website</button>
                 </div>
                 <div style="padding-bottom: 30px;">
                     <button onclick="location.href='https://github.com/JulianBeaulieu'" type="button" class="btn btn-outline-light" style="width: 80%; padding-top:10px; padding-bottom:10px; font-weight: 600;">My GitHub</button>
@@ -131,11 +134,47 @@
                 <div style="padding-bottom: 30px;">
                     <button onclick="location.href='http://www.linkedin.com/in/julianbeaulieu'" type="button" class="btn btn-outline-light" style="width: 80%; padding-top:10px; padding-bottom:10px; font-weight: 600;">Connect On LinkedIn</button>
                 </div>
-
             </div>
     </div>
     </div>
 
+
+
+    <script>
+
+    function create_VCARD() {
+        var name = "Julian Beaulieu.vcf";
+
+        var mime_type = "text/plain";
+
+        var contents = "BEGIN:VCARD\n"+
+        "VERSION:3.0\n"+
+        "PRODID:-//Apple Inc.//macOS 11.2.3//EN\n"+
+        "N:Beaulieu;Julian;;;\n"+
+        "FN:Julian Beaulieu\n"+
+        "EMAIL;type=INTERNET;type=HOME;type=pref:julianbeaulieu@yahoo.com\n"+
+        "TEL;type=IPHONE;type=CELL;type=VOICE:+1(760)672-0706\n"+
+        "item2.URL;type=pref:julianbeaulieu.com\n"+
+        "item2.X-ABLabel:_$!<HomePage>!$_\n"+
+        "END:VCARD";
+
+        var blob = new Blob([contents], {type: mime_type});
+
+        var dlink = document.createElement('a');
+        dlink.download = name;
+        dlink.href = window.URL.createObjectURL(blob);
+        dlink.onclick = function(e) {
+            // revokeObjectURL needs a delay to work properly
+            var that = this;
+            setTimeout(function() {
+                window.URL.revokeObjectURL(that.href);
+            }, 1500);
+        };
+
+        dlink.click();
+        dlink.remove();
+    }
+    </script>
     </body>
 
 </html>
